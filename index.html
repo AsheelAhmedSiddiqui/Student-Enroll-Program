@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Student Enrollment Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+		<!-- Sweet Alert CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	</head>
+	<body>
+		<h1>Student Enroll Form</h1>
+		<form class="enrollment-form" id="enrollForm">
+			<input type="text" name="studentName" id="studentName" placeholder="Enter your name" required/>
+			<input type="number" name="studentAge" id="studentAge" placeholder="Enter your age" required/>
+			<div class="radio">
+				<input class="gender" type="radio" name="studentGender" value="male" id="male" required />
+				<label for="male">Male</label>
+				<input class="gender" type="radio" name="studentGender" value="female" id="female" required />
+				<label for="female">Female</label>
+			</div>
+			<input type="email" name="studentEmail" id="studentEmail" placeholder="Enter your valid email" required></input>
+			<input type="submit" value="Enroll" />
+		</form>
+		<div class="container">
+			<table class="showData">
+				<thead>
+					<tr>
+						<td>Roll Number</td>
+						<td>Name</td>
+						<td>Age</td>
+						<td>Gender</td>
+						<td>Email</td>
+						<td>Edit / Delete</td>
+					</tr>
+				</thead>
+				<tbody id="dataTable"></tbody>
+			</table>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: "Noto Sans", sans-serif;
+}
+
+body {
+	background-image: url(./background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	text-align: center;
+	margin: 30px 0;
+	text-transform: uppercase;
+	color: #081b2e;
+}
+
+.enrollment-form {
+	width: 600px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(0px);
+	padding: 30px 20px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	border: 1px solid #1d4160;
+}
+
+.container {
+	margin-top: 20px;
+}
+
+.showData {
+	background-color: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	width: 1100px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+.enrollment-form input {
+	color: #fff;
+	font-size: 1.1rem;
+	padding: 14px 20px;
+	border: none;
+	border-radius: 50px;
+	width: 400px;
+	border: 1px solid #081928;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.enrollment-form .radio {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	width: 0;
+}
+
+.enrollment-form input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.enrollment-form label {
+	font-size: 1.1rem;
+}
+
+.enrollment-form input[type="submit"] {
+	background-color: #1d4160;
+	font-weight: 600;
+	font-size: 1.2rem;
+	width: 200px;
+	border: none;
+	transition: all 0.3s;
+}
+
+.enrollment-form input[type="submit"]:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #081928;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 1.2rem;
+	width: 200px;
+	border: none;
+	transition: all 0.3s;
+}
+
+::placeholder {
+	color: #fff;
+}
+
+.enrollment-form input:focus {
+	outline: none;
+}
+
+.btn-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.showData thead tr {
+    background-color: #1d4160 !important;
+}
+
+.showData tr td {
+	padding: 10px;
+	font-weight: 600;
+}
+
+.showData tr:nth-child(odd) {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.showData tr td #edit,
+.showData tr td #delete {
+	font-weight: 600;
+	border: none;
+	padding: 5px 20px;
+	font-size: 1rem;
+	border-radius: 20px;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.showData tr td #edit {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #081928;
+}
+
+.showData tr td #delete {
+	background-color: #14334e;
+	color: #fff;
+}
+
+.showData tr td #edit:hover {
+	background-color: #14334e;
+	color: #fff;
+}
+
+.showData tr td #delete:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #081928;
+}
