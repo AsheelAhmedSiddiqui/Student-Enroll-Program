@@ -59,7 +59,7 @@ const displayData = () => {
 		finalData += `
 					<tr>
 						<td>${element.studentId}</td>
-						<td>${element.studentName}</td>
+						<td>${element.studentName.slice(0,1).toUpperCase()}${element.studentName.slice(1)}</td>
 						<td>${element.studentAge}</td>
 						<td>${element.studentGender}</td>
 						<td>${element.studentEmail}</td>
